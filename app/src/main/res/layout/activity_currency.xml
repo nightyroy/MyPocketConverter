@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_currency"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.agnesbrite.mypocketconverter.Currency">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/orange"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/orange"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Choose Currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:id="@+id/textView"
+            android:textSize="50sp"
+            android:fontFamily="cursive"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center" />
+
+        <Button
+            android:text="Japanese Yen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:id="@+id/yen"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@android:color/holo_blue_dark"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="Thai Baht"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:id="@+id/baht"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="18sp"
+            android:layout_below="@+id/baht"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Malaysia Ringgit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:id="@+id/rm"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:layout_below="@+id/baht"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>
